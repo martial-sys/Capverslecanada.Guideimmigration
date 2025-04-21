@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<!-- Meta Pixel Code -->
-<script>
+	<script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -17,8 +16,6 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
-	<!-- Google Analytics 4 - Tracking achat -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZDBJMMCWT"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -28,7 +25,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Immigration Canada Étape par Étape : Votre Chemin Clair et Fiable</title>
+    <title>Guide Ultime Immigration Canada : Votre Chemin Clair et Fiable Loin des Arnaques</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -294,7 +291,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
             color: #003366;
         }
 
-         /* --- Section Contenu du Guide (Cartes Visuelles) --- */
+         /* --- Section Contenu du Guide (Liste Détaillée) --- */
          .content-section {
              background-color: #ffffff;
              padding: 80px 0;
@@ -305,80 +302,42 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
              color: #0056b3;
          }
 
-         .content-cards-grid {
-             display: grid;
-             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-             gap: 30px;
-             margin-top: 50px;
-         }
-
-         .content-card {
-             background-color: #f8f8f8;
-             padding: 35px; /* Plus de padding */
-             border-radius: 10px; /* Bords plus ronds */
-             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Ombre plus marquée */
-             text-align: left;
-             transition: transform 0.3s ease, box-shadow 0.3s ease;
-             border-top: 8px solid; /* Bordure supérieure plus épaisse */
-         }
-
-         .content-card.express { border-top-color: #0056b3; } /* Bleu */
-         .content-card.etudes { border-top-color: #28a745; } /* Vert */
-         .content-card.quebec { border-top-color: #d9534f; } /* Rouge */
-
-
-         .content-card:hover {
-             transform: translateY(-7px); /* Élévation plus marquée */
-             box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-         }
-
-         .content-card .icon-card {
-             font-size: 45px;
-             margin-bottom: 15px;
-         }
-          .content-card.express .icon-card { color: #0056b3; }
-          .content-card.etudes .icon-card { color: #28a745; }
-          .content-card.quebec .icon-card { color: #d9534f; }
-
-
-         .content-card h3 {
-             font-size: 24px; /* Titres de carte plus grands */
-             color: #003366; /* Bleu marine */
-             margin-bottom: 15px;
-             font-weight: 700;
-         }
-
-         .content-card p {
-             font-size: 19px; /* Taille normale */
-             color: #555;
-             line-height: 1.7;
-             margin-bottom: 15px; /* Espace entre les paragraphes */
-         }
-
-         .content-card ul {
+        /* Styles spécifiques pour la nouvelle liste de modules */
+         .modules-list {
              list-style: none;
              padding: 0;
-             margin-top: 15px;
+             margin-top: 50px;
+             text-align: left; /* Alignement du texte des points */
+             max-width: 800px; /* Largeur max pour la liste */
+             margin-left: auto; /* Centrer la liste */
+             margin-right: auto;
          }
 
-         .content-card ul li {
+         .modules-list li {
+             background-color: #f8f8f8;
+             padding: 25px;
+             margin-bottom: 20px;
+             border-radius: 8px;
+             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+             border-left: 5px solid #0056b3; /* Bordure de couleur */
              font-size: 19px; /* Taille normale */
-             color: #444;
-             margin-bottom: 10px;
-             line-height: 1.6;
-             padding-left: 30px;
-             position: relative;
-         }
-         .content-card ul li i.fas {
-             color: #28a745; /* Vert pour les points clés */
-             position: absolute;
-             left: 0;
-             top: 3px;
-             font-size: 20px;
+             color: #333;
+             line-height: 1.7;
          }
 
+         .modules-list li strong {
+             color: #003366; /* Titre du module en gras bleu marine */
+             display: block; /* Pour qu'il soit sur sa propre ligne */
+             margin-bottom: 8px;
+             font-size: 20px; /* Taille légèrement plus grande */
+         }
 
-        /* --- Section Histoire de Mamadou --- */
+         .modules-list li span {
+             font-size: 17px; /* Description un peu plus petite */
+             color: #555;
+         }
+
+         /* --- Section Histoire de Mamadou --- */
         .mamadou-story-section {
             background-color: #fff3e0;
             padding: 70px 0;
@@ -483,7 +442,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
 
         .faq-section .container {
             max-width: 800px;
-             margin: 0 auto;
+            margin: 0 auto;
              padding: 0 20px;
         }
 
@@ -541,7 +500,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
 
         .what-you-get-section .container {
             max-width: 700px;
-             margin: 0 auto;
+            margin: 0 auto;
              padding: 0 20px;
         }
 
@@ -608,7 +567,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
             font-size: 19px; /* Taille normale */
             color: #444;
             line-height: 1.7;
-             margin-bottom: 0;
+            margin-bottom: 0;
         }
 
         .bonus-item .icon-large {
@@ -616,6 +575,16 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
              margin-bottom: 15px;
              color: #fbc02d;
          }
+        /* Style spécifique pour le bonus du guide précédent */
+        .bonus-item.guide-bonus .icon-large {
+             color: #003366; /* Icône bleue pour le guide */
+        }
+        .bonus-item.guide-bonus {
+             border-top-color: #003366; /* Bordure bleue */
+        }
+        .bonus-item.guide-bonus h3 {
+             color: #003366; /* Titre en bleu marine */
+        }
 
 
         /* --- Section Justification Promotion --- */
@@ -662,11 +631,11 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
             min-width: 300px;
             max-width: 400px;
              text-align: left;
-             color: #333;
+             color: white; /* Texte blanc pour contraste sur fond bleu */
         }
         .pricing-info-block h3.pricing-info-title {
             font-size: 24px;
-            color: #003366;
+            color: #ffffff; /* Titre blanc pour contraste sur fond bleu */
             margin-bottom: 15px;
              text-align: center;
         }
@@ -679,7 +648,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
 
         .price-box {
             background-color: #ffffff;
-            color: #333;
+            color: #333; /* Texte foncé sur fond blanc dans la boîte de prix */
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -709,7 +678,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
         .promo-price {
             font-size: 52px; /* Prix encore plus grand */
             font-weight: 700;
-            color: #d9534f;
+            color: #ffc107; /* Jaune vif pour bon contraste sur fond bleu */
             margin-bottom: 10px;
         }
 
@@ -763,7 +732,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
 
         .footer-note {
             font-size: 16px;
-            color: #cfd8dc;
+            color: #adb5bd; /* Couleur avec meilleur contraste que le précédent */
             margin-top: 30px;
             text-align: center;
         }
@@ -773,7 +742,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
            padding: 0;
            margin-top: 15px;
            text-align: left;
-           color: #444;
+           color: white; /* Texte blanc pour contraste sur fond bleu */
            font-size: 19px; /* Taille normale */
         }
 
@@ -785,7 +754,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
         }
 
         .get-list-summary li i.fas {
-           color: #28a745;
+           color: #28a745; /* Icône verte */
            position: absolute;
            left: 0;
            top: 3px;
@@ -805,14 +774,14 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
             text-align: center;
             margin-top: 30px;
             font-size: 15px;
-            color: #555;
+            color: white; /* Texte blanc pour contraste sur fond bleu */
         }
         .device-icons {
             margin-top: 10px;
         }
         .device-icons i.fas {
             font-size: 28px; /* Icônes appareil plus grandes */
-            color: #0056b3;
+            color: #ffffff; /* Icônes blanches sur fond bleu */
             margin: 0 8px;
             transition: transform 0.3s ease;
         }
@@ -847,7 +816,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
 
         .whatsapp-contact-section h2 {
              color: #25D366;
-        }
+         }
 
         .whatsapp-contact-section p {
             font-size: 19px; /* Taille normale */
@@ -942,15 +911,11 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
                  line-height: 1.7;
              }
 
-            /* Contenu du Guide (Cartes Visuelles) */
-             .content-cards-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 40px; }
-             .content-card { padding: 30px; border-top-width: 6px;}
-             .content-card .icon-card { font-size: 40px; margin-bottom: 10px; }
-             .content-card h3 { font-size: 22px; margin-bottom: 10px; }
-             .content-card p { font-size: 17px; margin-bottom: 10px;}
-             .content-card ul { margin-top: 10px; }
-             .content-card ul li { font-size: 17px; margin-bottom: 8px; padding-left: 28px;}
-             .content-card ul li i.fas { font-size: 18px; top: 2px;}
+            /* Contenu du Guide (Liste Détaillée) */
+             .modules-list { margin-top: 40px;}
+             .modules-list li { padding: 20px; margin-bottom: 15px; font-size: 17px;}
+             .modules-list li strong { font-size: 18px; margin-bottom: 6px;}
+             .modules-list li span { font-size: 15px;}
 
 
             /* Témoignages */
@@ -983,26 +948,26 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
             /* Section Prix */
             .pricing-section h2 { font-size: 32px; margin-bottom: 30px; }
             .pricing-content-wrapper { flex-direction: column; gap: 30px; }
-            .pricing-info-block { text-align: center; max-width: 100%; }
-            .pricing-info-block h3.pricing-info-title { font-size: 22px; }
-            .get-list-summary { text-align: center; font-size: 17px; }
+            .pricing-info-block { text-align: center; max-width: 100%; color: white; } /* Maintenir texte blanc */
+            .pricing-info-block h3.pricing-info-title { font-size: 22px; color: #ffffff; } /* Maintenir titre blanc */
+            .get-list-summary { text-align: center; font-size: 17px; color: white; } /* Maintenir texte blanc */
             .get-list-summary li { padding-left: 0; margin-bottom: 8px; }
             .get-list-summary li i.fas { position: static; margin-right: 8px; }
             .pricing-box-wrapper { max-width: 90%; }
             .price-box { padding: 30px; }
             .price-box .price-label { font-size: 17px; }
             .price-box .original-price { font-size: 19px; }
-            .promo-price { font-size: 44px; }
+            .promo-price { font-size: 44px; color: #ffc107; } /* Maintenir couleur pour contraste */
             .price-box .saving { font-size: 19px; margin-bottom: 25px; }
             .payment-security { font-size: 14px; }
             .price-box .payment-methods { margin-top: 20px; padding-top: 15px; }
             .price-box .payment-methods p { font-size: 15px; }
             .price-box .payment-methods img { height: 30px; }
             .price-box .payment-methods .mobile-payments-note { font-size: 14px; margin-top: 8px; }
-            .footer-note { font-size: 15px; margin-top: 25px; }
+            .footer-note { font-size: 15px; margin-top: 25px; color: #adb5bd; } /* Maintenir couleur */
             .pricing-mockup-img { max-width: 150px; margin: 15px auto; }
-            .device-compatibility { font-size: 14px; margin-top: 20px; }
-            .device-icons i.fas { font-size: 24px; }
+            .device-compatibility { font-size: 14px; margin-top: 20px; color: white; } /* Maintenir texte blanc */
+            .device-icons i.fas { font-size: 24px; color: #ffffff; } /* Maintenir icônes blanches */
 
             /* Garantie */
              .guarantee-section .guarantee-text { font-size: 17px; margin-bottom: 10px; }
@@ -1046,15 +1011,11 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
                 line-height: 1.6;
             }
 
-            /* Contenu du Guide (Cartes Visuelles) */
-            .content-cards-grid { grid-template-columns: 1fr; gap: 15px; margin-top: 30px;}
-            .content-card { padding: 25px; border-top-width: 5px;}
-             .content-card .icon-card { font-size: 35px; margin-bottom: 10px; }
-            .content-card h3 { font-size: 20px; margin-bottom: 8px; }
-             .content-card p { font-size: 16px; margin-bottom: 10px;}
-             .content-card ul { margin-top: 8px;}
-             .content-card ul li { font-size: 16px; margin-bottom: 6px; padding-left: 25px;}
-             .content-card ul li i.fas { font-size: 17px; top: 1px;}
+            /* Contenu du Guide (Liste Détaillée) */
+            .modules-list { margin-top: 30px;}
+            .modules-list li { padding: 15px; margin-bottom: 10px; font-size: 16px;}
+            .modules-list li strong { font-size: 17px; margin-bottom: 5px;}
+            .modules-list li span { font-size: 14px;}
 
 
             /* Témoignages */
@@ -1087,20 +1048,25 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
             /* Section Prix */
             .pricing-section h2 { font-size: 28px; margin-bottom: 25px; }
             .pricing-content-wrapper { gap: 20px; }
+            .pricing-info-block { text-align: center; max-width: 95%; color: white; } /* Maintenir texte blanc */
+             .pricing-info-block h3.pricing-info-title { font-size: 20px; color: #ffffff; } /* Maintenir titre blanc */
+            .get-list-summary { text-align: center; font-size: 16px; color: white; } /* Maintenir texte blanc */
+             .get-list-summary li { padding-left: 0; margin-bottom: 6px; }
+            .get-list-summary li i.fas { position: static; margin-right: 6px; }
             .pricing-box-wrapper { max-width: 95%; }
             .price-box { padding: 25px; }
             .price-box .price-label { font-size: 16px; }
             .price-box .original-price { font-size: 17px; }
-            .promo-price { font-size: 40px; }
+            .promo-price { font-size: 40px; color: #ffc107; } /* Maintenir couleur pour contraste */
             .price-box .saving { font-size: 17px; margin-bottom: 20px; }
             .payment-security { font-size: 13px; margin-top: 10px; }
             .price-box .payment-methods p { font-size: 14px; margin-bottom: 6px; }
             .price-box .payment-methods img { height: 25px; }
             .price-box .payment-methods .mobile-payments-note { font-size: 13px; margin-top: 6px; }
-            .footer-note { font-size: 14px; margin-top: 20px; }
+            .footer-note { font-size: 14px; margin-top: 20px; color: #adb5bd; } /* Maintenir couleur */
             .pricing-mockup-img { max-width: 100px; margin: 10px auto; }
-            .device-compatibility { font-size: 13px; margin-top: 15px; }
-            .device-icons i.fas { font-size: 20px; }
+            .device-compatibility { font-size: 13px; margin-top: 15px; color: white; } /* Maintenir texte blanc */
+            .device-icons i.fas { font-size: 20px; color: #ffffff; } /* Maintenir icônes blanches */
 
             /* Garantie */
             .guarantee-section .guarantee-text { font-size: 16px; margin-bottom: 8px; }
@@ -1131,16 +1097,16 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
     <header class="hero-section">
         <div class="container">
             <div class="hero-content" data-aos="fade-right">
-                <h1>Immigration Canada :<br>Votre Guide Officiel pour un Projet Réussi, Loin des Arnaques.</h1>
-                <p class="subtitle">Vous êtes ambitieux(se) et rêvez du Canada ? Accédez à la SEULE information fiable pour naviguer Entrée Express, Études, et le Québec.</p>
-                <p>Oubliez les informations floues et la peur de vous faire avoir. Ce guide est votre lumière dans la complexité.</p>
+                <h1>Guide Ultime Immigration Canada :<br>Votre Chemin Clair et Fiable Loin des Arnaques.</h1>
+                <p class="subtitle">Vous êtes ambitieux(se) et rêvez du Canada ?<br>Accédez à la <strong>SEULE</strong> information fiable et complète pour maîtriser votre projet, de A à Z.</p>
+                <p>Oubliez les informations floues, la peur de vous faire avoir et le stress de ne pas savoir par où commencer, même après votre arrivée. Ce guide est votre lumière dans toute la complexité, avant et après le départ.</p>
                 <a href="#pricing" class="cta-button main-cta" data-aos="fade-up" data-aos-delay="400">
-                    Oui, je Veux le Guide et Éviter les Pièges !
+                    Oui, je Veux le Guide Ultime et Maîtriser Mon Projet !
                 </a>
-                 <p class="cta-subtext" data-aos="fade-up" data-aos-delay="500">Investissez dans la clarté, pas dans l'incertitude.</p>
+                 <p class="cta-subtext" data-aos="fade-up" data-aos-delay="500">Investissez dans la clarté et la complétude, pas dans l'incertitude.</p>
             </div>
             <div class="hero-image" data-aos="fade-left">
-                <img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/6806771249a97_1001951502.png" alt="Mockup du Guide Immigration Canada Étape par Étape" class="guide-mockup">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/6806771249a97_1001951502.png" alt="Mockup du Guide Ultime Immigration Canada 2025" class="guide-mockup">
             </div>
         </div>
     </header>
@@ -1148,27 +1114,28 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
     <section class="problem-section">
         <div class="container">
              <i class="fas fa-exclamation-triangle icon-section" data-aos="fade-up"></i>
-            <h2 data-aos="fade-up" data-aos-delay="100">Le Vrai Défi ? La Désinformation et la Peur de Perdre Gros.</h2>
-            <p data-aos="fade-up" data-aos-delay="200">Le processus d'immigration peut être complexe, mais le plus grand danger vient des promesses irréalistes et des fausses informations qui circulent.</p>
-            <p data-aos="fade-up" data-aos-delay="250">Beaucoup tombent dans le piège des "facilitateurs" non réglementés, perdant des sommes considérables (comme Mamadou et ses 3+ millions F CFA perdus) pour des services qui ne mènent nulle part. Votre ambition et vos économies méritent d'être protégées.</p>
+            <h2 data-aos="fade-up" data-aos-delay="100">Le Vrai Défi ? La Désinformation, l'Information Éparse et la Peur de Perdre Gros.</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Le processus d'immigration est complexe, mais le plus grand danger vient des promesses irréalistes, des fausses informations, et surtout, de l'information officielle tellement éparpillée qu'il est presque impossible de tout rassembler soi-même.</p>
+            <p data-aos="fade-up" data-aos-delay="250">Beaucoup tombent dans le piège des "facilitateurs" non réglementés ou abandonnent face à la masse d'infos décousues, perdant des sommes considérables et un temps précieux. Votre ambition et vos économies méritent d'être protégées par la <strong>SEULE</strong> information complète et fiable.</p>
         </div>
     </section>
 
      <section class="solution-section">
         <div class="container">
              <i class="fas fa-lightbulb icon-section" data-aos="fade-up"></i>
-            <h2 data-aos="fade-up" data-aos-delay="100">Votre Solution : La Connaissance Officielle et Structurée.</h2>
-             <p class="section-intro" data-aos="fade-up" data-aos-delay="200">Le guide <strong>"Immigration Canada Étape par Étape"</strong> est votre antidote à la confusion et aux arnaques. Il vous donne le pouvoir de comprendre les VRAIES procédures, étape par étape, directement des sources officielles.</p>
-            <p data-aos="fade-up" data-aos-delay="300">Imaginez :</p>
+            <h2 data-aos="fade-up" data-aos-delay="100">Votre Solution Ultime : La Connaissance Officielle, Structurée et Complète.</h2>
+             <p class="section-intro" data-aos="fade-up" data-aos-delay="200">Le guide <strong>"Guide Ultime Pour Immigrer Au Canada | Édition 2025 - Spécial Afrique Francophone"</strong> est votre antidote à la confusion, aux arnaques ET à l'information éparse. Il vous donne le pouvoir de comprendre les VRAIES procédures ET de vous préparer à la vie au Canada, étape par étape, directement des sources officielles fiables.</p>
+            <p data-aos="fade-up" data-aos-delay="300">Imaginez avoir :</p>
             <ul class="get-list" style="max-width: 700px; margin: 20px auto;">
-                 <li data-aos="fade-up" data-aos-delay="400"><i class="fas fa-check-circle"></i> Un chemin balisé pour les 3 voies principales.</li>
-                 <li data-aos="fade-up" data-aos-delay="500"><i class="fas fa-check-circle"></i> Savoir EXACTEMENT quels documents préparer (et pourquoi !).</li>
-                 <li data-aos="fade-up" data-aos-delay="600"><i class="fas fa-check-circle"></i> Identifier instantanément les signes d'une fausse promesse.</li>
-                 <li data-aos="fade-up" data-aos-delay="700"><i class="fas fa-check-circle"></i> Reprendre confiance en ayant le contrôle de votre dossier.</li>
+                 <li data-aos="fade-up" data-aos-delay="400"><i class="fas fa-check-circle"></i> Un chemin balisé pour toutes les étapes cruciales (avant et après l'arrivée).</li>
+                 <li data-aos="fade-up" data-aos-delay="500"><i class="fas fa-check-circle"></i> Savoir <strong>EXACTEMENT</strong> quels documents préparer pour chaque étape (et comment éviter les rejets !).</li>
+                 <li data-aos="fade-up" data-aos-delay="600"><i class="fas fa-check-circle"></i> Les clés pour identifier instantanément les signes d'une fausse promesse ou d'une arnaque.</li>
+                 <li data-aos="fade-up" data-aos-delay="700"><i class="fas fa-check-circle"></i> Les informations pratiques sur l'installation (logement, santé, budget, etc.) pour une transition en douceur.</li>
+                 <li data-aos="fade-up" data-aos-delay="800"><i class="fas fa-check-circle"></i> Reprendre confiance en ayant le contrôle <strong>TOTAL</strong> de votre dossier et de votre projet.</li>
              </ul>
-             <div class="text-center" data-aos="fade-up" data-aos-delay="800" style="margin-top: 40px;">
+             <div class="text-center" data-aos="fade-up" data-aos-delay="900" style="margin-top: 40px;">
                  <a href="#pricing" class="cta-button">
-                     Je Veux Cette Clarté et Éviter les Erreurs !
+                     Je Veux Cette Clarté, Cette Complétude et Éviter les Erreurs !
                  </a>
              </div>
         </div>
@@ -1176,52 +1143,25 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
 
     <section class="content-section">
         <div class="container">
-            <h2 data-aos="fade-up">Découvrez les Voies d'Accès au Canada Expliquées :</h2>
-             <p class="section-intro" data-aos="fade-up" data-aos-delay="100">Le guide ne se limite pas à survoler les sujets. Il plonge dans les détails essentiels pour chaque chemin, vous donnant les connaissances actionnables.</p>
+            <h2 data-aos="fade-up">Découvrez les 10 Modules Essentiels du Guide Ultime :</h2>
+             <p class="section-intro" data-aos="fade-up" data-aos-delay="100">Le Guide Ultime couvre <strong>TOUT</strong> le parcours, de la décision de partir à votre adaptation au Canada. Explorez les modules qui vont transformer votre projet :</p>
 
-            <div class="content-cards-grid">
-                <div class="content-card express" data-aos="fade-up" data-aos-delay="200">
-                     <i class="fas fa-plane icon-card"></i>
-                    <h3>Entrée Express : La Résidence Permanente (Hors Québec)</h3>
-                    <p>Le système pour les travailleurs qualifiés expliqué :</p>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> Comment vérifier votre éligibilité et calculer votre score SCG.</li>
-                        <li><i class="fas fa-check-circle"></i> L'importance CRUCIALE des tests linguistiques et de l'évaluation des diplômes (EDE).</li>
-                        <li><i class="fas fa-check-circle"></i> Les étapes de création et d'optimisation de votre profil dans le bassin.</li>
-                        <li><i class="fas fa-check-circle"></i> Que faire après avoir reçu (ou en attendant) l'Invitation à Postuler (IPD).</li>
-                        <li><i class="fas fa-check-circle"></i> Les documents à préparer minutieusement (preuves de fonds, certificats de police, médical...).</li>
-                        <li><i class="fas fa-check-circle"></i> Comment une nomination provinciale peut booster votre score de 600 points !</li>
-                    </ul>
-                </div>
+            <ul class="modules-list" data-aos="fade-up" data-aos-delay="200">
+                 <li><strong>Module 1 : Comprendre le système d'immigration canadien</strong> <span>- Les fondations, les types d'immigration, les défis spécifiques et comment éviter les arnaques.</span></li>
+                 <li><strong>Module 2 : Évaluer son admissibilité et choisir le bon programme</strong> <span>- Calculer vos points, comparer Entrée Express, les programmes provinciaux et le Québec pour trouver <strong>VOTRE</strong> meilleure voie.</span></li>
+                 <li><strong>Module 3 : Préparation des documents et formulaires officiels</strong> <span>- La checklist complète, comment remplir correctement les formulaires IRCC/MIFI et éviter les rejets coûteux.</span></li>
+                 <li><strong>Module 4 : Reconnaissance des diplômes et compétences étrangères</strong> <span>- Faire évaluer vos études, comprendre la reconnaissance professionnelle et valoriser votre expérience africaine.</span></li>
+                 <li><strong>Module 5 : Recherche d'emploi et préparation du CV canadien</strong> <span>- Adapter votre approche au marché canadien, rédiger un CV percutant et réussir vos entretiens.</span></li>
+                 <li><strong>Module 6 : Préparation Financière et Budgétisation</strong> <span>- Frais, fonds d'établissement (avec stratégies adaptées à la réalité africaine), budget réaliste, transfert de fonds.</span></li>
+                 <li><strong>Module 7 : Logement et installation au Canada</strong> <span>- Trouver un logement sans historique de crédit, comprendre les baux, s'adapter au climat, l'installation pratique.</span></li>
+                 <li><strong>Module 8 : Système de santé et assurances au Canada</strong> <span>- Couverture provinciale, assurances temporaires, trouver un médecin, accès aux soins.</span></li>
+                 <li><strong>Module 9 : Éducation et intégration familiale</strong> <span>- Le système éducatif canadien, inscription, soutien pour enfants immigrants, défis parentaux, aide financière éducation.</span></li>
+                 <li><strong>Module 10 : Adaptation culturelle et vie quotidienne au Canada</strong> <span>- Comprendre la culture canadienne, vie de tous les jours, faire face au choc culturel, vie sociale et loisirs.</span></li>
+            </ul>
 
-                <div class="content-card etudes" data-aos="fade-up" data-aos-delay="300">
-                     <i class="fas fa-book icon-card"></i>
-                    <h3>Permis d'Études : La Voie Stratégique</h3>
-                    <p>Étudier au Canada est souvent une excellente porte d'entrée :</p>
-                     <ul>
-                        <li><i class="fas fa-check-circle"></i> Choisir la bonne école et le bon programme (et pourquoi c'est important).</li>
-                        <li><i class="fas fa-check-circle"></i> Le processus de demande d'admission expliqué.</li>
-                        <li><i class="fas fa-check-circle"></i> Comment rédiger un plan d'études convaincant pour votre demande de permis.</li>
-                        <li><i class="fas fa-check-circle"></i> Les étapes de la demande de permis d'études elle-même.</li>
-                         <li><i class="fas fa-check-circle"></i> Comprendre les possibilités post-diplôme.</li>
-                     </ul>
-                </div>
-
-                <div class="content-card quebec" data-aos="fade-up" data-aos-delay="400">
-                     <i class="fas fa-leaf icon-card"></i>
-                    <h3>Immigration au Québec : Le CSQ</h3>
-                    <p>La Belle Province a son propre système de sélection :</p>
-                     <ul>
-                        <li><i class="fas fa-check-circle"></i> Qu'est-ce que le Certificat de Sélection du Québec (CSQ) et pourquoi est-il unique.</li>
-                         <li><i class="fas fa-check-circle"></i> Les critères de sélection du Québec expliqués simplement.</li>
-                         <li><i class="fas fa-check-circle"></i> Comment utiliser la plateforme Arrima.</li>
-                         <li><i class="fas fa-check-circle"></i> Les étapes au niveau provincial (CSQ) puis au niveau fédéral.</li>
-                     </ul>
-                </div>
-            </div>
-             <div class="text-center" data-aos="fade-up" data-aos-delay="500" style="margin-top: 50px;">
+             <div class="text-center" data-aos="fade-up" data-aos-delay="300" style="margin-top: 50px;">
                  <a href="#pricing" class="cta-button main-cta">
-                     Accéder au Guide Complet et Obtenir Ce Niveau de Détail !
+                   Accéder au Guide Ultime (10 Modules) et Maîtriser Mon Projet Entier !
                  </a>
              </div>
         </div>
@@ -1232,7 +1172,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
              <i class="fas fa-user-times icon-section" data-aos="fade-up"></i>
             <h2 data-aos="fade-up" data-aos-delay="100">Ne Devenez Pas Le Prochain Mamadou. Protégez Votre Projet.</h2>
              <p data-aos="fade-up" data-aos-delay="200">L'histoire de Mamadou est un rappel brutal : sans information fiable, le risque est immense. Perte d'argent, de temps, et surtout, la douleur d'un rêve brisé. Plus de 3 millions F CFA envolés en un instant...</p>
-            <p data-aos="fade-up" data-aos-delay="250">Le guide coûte une fraction infime de cette somme. C'est un investissement pour votre sécurité et la tranquillité d'esprit, vous donnant les moyens d'identifier les arnaques et de suivre les vrais chemins officiels.</p>
+            <p data-aos="fade-up" data-aos-delay="250">Le Guide Ultime coûte une fraction infime de cette somme. C'est un investissement pour votre sécurité et la tranquillité d'esprit, vous donnant les moyens d'identifier les arnaques, de suivre les vrais chemins officiels ET de vous préparer concrètement à votre nouvelle vie.</p>
         </div>
     </section>
 
@@ -1240,12 +1180,12 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
         <div class="container">
              <i class="fas fa-star icon-section" data-aos="fade-up"></i>
             <h2 data-aos="fade-up" data-aos-delay="100">Ce Qu'Ils Disent Après Avoir Trouvé la Bonne Information :</h2>
-            <p class="section-intro" data-aos="fade-up" data-aos-delay="200">Leur succès commence par la clarté et la confiance retrouvées pour agir.</p>
+             <p class="section-intro" data-aos="fade-up" data-aos-delay="200">Leur succès commence par la clarté et la confiance retrouvées pour agir.</p>
 
             <div class="testimonials-grid">
                 <div class="testimonial" data-aos="fade-up" data-aos-delay="300">
                     <i class="fas fa-quote-left"></i>
-                    <p>"Fini le stress de la recherche ! Le guide est MA référence unique. C'est comme avoir un expert qui vous dit exactement quoi faire à chaque étape. Ça change tout."</p>
+                    <p>"Fini le stress de la recherche ! Le guide est <strong>MA</strong> référence unique. C'est comme avoir un expert qui vous dit exactement quoi faire à chaque étape. Ça change tout."</p>
                     <p class="author">- Aminata T., Sénégal</p>
                 </div>
                 <div class="testimonial" data-aos="fade-up" data-aos-delay="400">
@@ -1255,13 +1195,18 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
                 </div>
                  <div class="testimonial" data-aos="fade-up" data-aos-delay="500">
                      <i class="fas fa-quote-left"></i>
-                     <p>"Je pensais qu'Entrée Express était ma seule option. Le guide m'a ouvert les yeux sur les études et le Québec. J'ai pu choisir la voie qui correspondait vraiment à mon profil. Inestimable !"</p>
+                     <p>"Je pensais qu'Entrée Express était ma seule option. Le guide m'a ouvert les yeux sur les études et le Québec. J'ai pu choisir la voie qui correspondait vraiment à mon profil. <strong>Inestimable !</strong>"</p>
                      <p class="author">- Fatima Z., Maroc</p>
                 </div>
+                <div class="testimonial" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Bonjour CVC Merci infiniment pour ce guide qui vient me donner une vue claire sur les différentes étapes d'une immigration vers le canada. Il m'est d'une grande utilité et je suis ravie de l'avoir acquis."</p>
+                    <p class="author">- Prisca S. 😊</p>
+                </div>
             </div>
-            <div class="text-center" data-aos="fade-up" data-aos-delay="600" style="margin-top: 40px;">
+            <div class="text-center" data-aos="fade-up" data-aos-delay="700" style="margin-top: 40px;">
                  <a href="#pricing" class="cta-button">
-                     Prêt(e) à Avancer avec Confiance ?
+                   Prêt(e) à Avancer avec Confiance ?
                  </a>
             </div>
         </div>
@@ -1270,8 +1215,8 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
     <section class="about-author-section">
         <div class="container" data-aos="fade-up">
              <i class="fas fa-user-check icon-section"></i>
-            <h2>Construit Avec Expertise et Empathie pour VOUS.</h2>
-            <img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/680596861e747_1001949895.jpg" alt="Photo de l'Auteur du Guide" class="author-image">
+             <h2>Construit Avec Expertise et Empathie pour <strong>VOUS</strong>.</h2>
+            <img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/680596861e747_1001949895.jpg" alt="Photo de l'Auteur du Guide Ultime" class="author-image">
             <p data-aos="fade-up" data-aos-delay="100">Je suis Martial, et j'ai créé ce guide parce que je connais les défis que vous rencontrez. J'ai décortiqué les informations officielles et structuré ce guide pour qu'il soit la ressource la plus claire et fiable pour les ambitieux Africains francophones.</p>
             <p data-aos="fade-up" data-aos-delay="150">Ma mission est de vous donner les moyens de réussir votre projet en toute autonomie et en toute sécurité, sans succomber aux fausses promesses. Ce guide est l'aboutissement de cette volonté.</p>
         </div>
@@ -1291,32 +1236,42 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
 
                 <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
                     <p class="question"><i class="fas fa-circle-question"></i> Les informations sont-elles à jour ?</p>
-                    <p class="answer">Oui, et c'est crucial ! Votre achat inclut un accès GRATUIT et ILLIMITÉ à <strong>toutes les futures mises à jour importantes</strong> du guide. Votre information ne sera jamais obsolète.</p>
+                    <p class="answer">Oui, et c'est crucial ! Ce guide est l'<strong>Édition 2025</strong>, la plus récente. De plus, votre achat inclut un accès GRATUIT et ILLIMITÉ à <strong>toutes les futures mises à jour importantes</strong> du guide. Votre information ne sera jamais obsolète.</p>
                 </div>
 
                  <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-                    <p class="question"><i class="fas fa-circle-question"></i> Est-ce que ça couvre toutes les options d'immigration ?</p>
-                    <p class="answer">Le guide couvre les 3 voies principales et les plus pertinentes pour notre public : Entrée Express (hors Québec), le Permis d'Études, et la sélection du Québec (CSQ). C'est la base essentielle pour commencer et avancer.</p>
+                    <p class="question"><i class="fas fa-circle-question"></i> Est-ce que ce guide couvre <strong>TOUT</strong> le processus d'immigration et d'installation ?</p>
+                    <p class="answer">Oui ! C'est un <strong>guide complet en 10 modules</strong> qui vous accompagne de la compréhension du système jusqu'à votre adaptation culturelle et vie quotidienne au Canada (logement, santé, éducation, etc.). Il couvre les 3 voies principales (Entrée Express, Études, Québec) et bien plus encore.</p>
                 </div>
 
                 <div class="faq-item" data-aos="fade-up" data-aos-delay="450">
                     <p class="question"><i class="fas fa-circle-question"></i> Comment je reçois le guide ?</p>
-                    <p class="answer">Immédiatement après votre paiement sécurisé, vous recevez un lien de téléchargement. Le guide est au format PDF, lisible sur tous vos appareils, instantanément.</p>
+                    <p class="answer">Immédiatement après votre paiement sécurisé, vous recevez un lien de téléchargement. Le guide est au format PDF, lisible sur tous vos appareils (ordinateur, tablette, smartphone), instantanément.</p>
                 </div>
 
                 <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
                     <p class="question"><i class="fas fa-circle-question"></i> C'est quoi ce groupe privé ?</p>
-                    <p class="answer">C'est votre espace de soutien. Échangez avec d'autres membres engagés, partagez vos expériences, trouvez de la motivation. Un lieu bienveillant pour ne pas vous sentir seul .</p>
+                    <p class="answer">C'est votre espace de soutien. Échangez avec d'autres membres engagés, partagez vos expériences, trouvez de la motivation. Un lieu bienveillant pour ne pas vous sentir seul.</p>
                 </div>
 
                  <div class="faq-item" data-aos="fade-up" data-aos-delay="550">
                     <p class="question"><i class="fas fa-circle-question"></i> Ce guide remplace-t-il un conseiller ?</p>
                     <p class="answer">Non, ce guide est un outil d'information puissant basé sur les sources officielles. Il ne remplace pas un conseil personnalisé pour votre cas spécifique, que seul un professionnel réglementé au Canada peut donner. Il vous permet de comprendre le processus pour agir seul si possible, ou pour être un client informé si vous consultez un professionnel.</p>
                 </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                    <p class="question"><i class="fas fa-circle-question"></i> Le guide aborde-t-il la reconnaissance des diplômes africains ou la recherche d'emploi au Canada ?</p>
+                    <p class="answer">Oui ! Le guide inclut des modules dédiés et des stratégies spécifiques pour la reconnaissance de vos qualifications, l'adaptation de votre CV aux standards canadiens, et une approche réaliste de la recherche d'emploi et du réseautage pour les Africains francophones.</p>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="650">
+                    <p class="question"><i class="fas fa-circle-question"></i> Y a-t-il des informations sur le budget ou le logement ?</p>
+                    <p class="answer">Absolument. Le guide consacre des modules complets à la préparation financière (budget, preuve de fonds, transfert d'argent - avec des stratégies adaptées à la réalité africaine) et à la recherche de logement et l'installation pratique au Canada.</p>
+                </div>
+
             </div>
-            <div class="text-center" data-aos="fade-up" data-aos-delay="600" style="margin-top: 40px;">
+            <div class="text-center" data-aos="fade-up" data-aos-delay="700" style="margin-top: 40px;">
                  <a href="#pricing" class="cta-button">
-                     Obtenir les Réponses et Avancer !
+                   Obtenir les Réponses et Avancer en Toute Sérénité !
                  </a>
             </div>
         </div>
@@ -1325,18 +1280,19 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
     <section class="what-you-get-section">
          <div class="container">
              <i class="fas fa-box-open icon-section" data-aos="fade-up"></i>
-             <h2 data-aos="fade-up" data-aos-delay="100">Votre Pack Complet pour un Projet Sécurisé :</h2>
-             <p class="section-intro" data-aos="fade-up" data-aos-delay="200">Pour vous donner toutes les clés du succès et vous protéger, voici ce que vous recevez IMMÉDIATEMENT :</p>
+             <h2 data-aos="fade-up" data-aos-delay="100">Votre Pack Ultime pour un Projet Sécurisé et Réussi :</h2>
+             <p class="section-intro" data-aos="fade-up" data-aos-delay="200">Pour vous donner toutes les clés du succès, maîtriser chaque étape et vous protéger, voici ce que vous recevez <strong>IMMÉDIATEMENT</strong> :</p>
              <ul class="get-list">
-                 <li data-aos="fade-up" data-aos-delay="300"><i class="fas fa-check-circle"></i> Le Guide Complet "Immigration Canada Étape par Étape" (PDF). Clair, détaillé, basé sur l'officiel.</li>
-                 <li data-aos="fade-up" data-aos-delay="400"><i class="fas fa-check-circle"></i> Accès GRATUIT et ILLIMITÉ à <strong>Toutes les Mises à Jour Futures</strong>. Restez à jour sans surcoût.</li>
-                 <li data-aos="fade-up" data-aos-delay="500"><i class="fas fa-check-circle"></i> Votre Invitation Personnelle au <strong>Groupe Privé Exclusif</strong>. Soutien communautaire et échanges.</li>
-                 <li data-aos="fade-up" data-aos-delay="600"><i class="fas fa-check-circle"></i> <strong>Modèles Optimisés de CV et Lettre de Motivation.</strong> Des exemples prêts à adapter pour vos candidatures.</li>
-                 <li data-aos="fade-up" data-aos-delay="700"><i class="fas fa-check-circle"></i> La Tranquillité d'Esprit. Savoir que vous agissez sur la base d'informations fiables.</li>
+                 <li data-aos="fade-up" data-aos-delay="300"><i class="fas fa-check-circle"></i> Le <strong>Guide Ultime Pour Immigrer Au Canada | Édition 2025</strong> (PDF). La ressource la plus complète en 10 modules, de la procédure à l'adaptation.</li>
+                 <li data-aos="fade-up" data-aos-delay="400"><i class="fas fa-check-circle"></i> Accès GRATUIT et ILLIMITÉ à <strong>Toutes les Mises à Jour Futures</strong>. Restez à jour sans surcoût face aux changements.</li>
+                 <li data-aos="fade-up" data-aos-delay="500"><i class="fas fa-check-circle"></i> Votre Invitation Personnelle au <strong>Groupe Privé Exclusif</strong>. Soutien communautaire, motivation et échanges entre membres.</li>
+                 <li data-aos="fade-up" data-aos-delay="600"><i class="fas fa-check-circle"></i> <strong>Modèles Optimisés de CV et Lettre de Motivation.</strong> Des exemples prêts à adapter aux standards canadiens pour vos candidatures.</li>
+                 <li data-aos="fade-up" data-aos-delay="700"><i class="fas fa-check-circle"></i> <strong>BONUS : Le Guide "Immigration Canada Étape par Étape" (Version Complémentaire)</strong>. Recevez également la version précédente du guide incluse, en complément de votre Guide Ultime.</li>
+                 <li data-aos="fade-up" data-aos-delay="800"><i class="fas fa-check-circle"></i> La Tranquillité d'Esprit Ultime. Savoir que vous agissez sur la base d'informations complètes, fiables et spécifiquement conçues pour vous.</li>
              </ul>
-             <div class="text-center" data-aos="fade-up" data-aos-delay="800" style="margin-top: 40px;">
+             <div class="text-center" data-aos="fade-up" data-aos-delay="900" style="margin-top: 40px;">
                  <a href="#pricing" class="cta-button main-cta">
-                     Oui, Je Veux Ce Pack Complet !
+                     Oui, Je Veux Ce Pack Ultime Complet !
                  </a>
              </div>
          </div>
@@ -1345,8 +1301,8 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
      <section class="bonuses-section">
          <div class="container">
               <i class="fas fa-gift icon-section" data-aos="fade-up"></i>
-             <h2 data-aos="fade-up" data-aos-delay="100">Ces Bonus Ne Resteront Pas Gratuits Longtemps...</h2>
-             <p class="section-intro" data-aos="fade-up" data-aos-delay="200">Saisissez l'opportunité d'obtenir ces atouts précieux SANS coût additionnel, uniquement aujourd'hui :</p>
+             <h2 data-aos="fade-up" data-aos-delay="100">Tous Ces Bonus Essentiels Sont Inclus (Offre Limitée) :</h2>
+             <p class="section-intro" data-aos="fade-up" data-aos-delay="200">Votre investissement dans le Guide Ultime vous ouvre les portes de ces atouts précieux <strong>SANS</strong> coût additionnel. Ne manquez pas cette offre complète :</p>
 
              <div class="bonuses-list">
                  <div class="bonus-item" data-aos="fade-up" data-aos-delay="300">
@@ -1366,10 +1322,15 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
                      <h3>Modèles CV + Lettre de Motivation</h3>
                      <p>Ne perdez pas de temps à créer vos documents de zéro. Accédez à des modèles optimisés pour les standards canadiens, prêts à être adaptés à votre profil.</p>
                  </div>
+
+                 <div class="bonus-item guide-bonus" data-aos="fade-up" data-aos-delay="600">
+                      <i class="fas fa-book-reader icon-large"></i> <h3>Bonus Exclusif : Le Guide Précédent Inclus !</h3>
+                     <p>En complément du Guide Ultime 2025, vous recevez également le Guide "Immigration Canada Étape par Étape" (version précédente). Une ressource additionnelle incluse gratuitement dans votre pack.</p>
+                 </div>
              </div>
-             <div class="text-center" data-aos="fade-up" data-aos-delay="600" style="margin-top: 40px;">
+             <div class="text-center" data-aos="fade-up" data-aos-delay="700" style="margin-top: 40px;">
                  <a href="#pricing" class="cta-button">
-                     Je Veux Saisir Cette Offre Avec Les Bonus !
+                   Je Veux Saisir Cette Offre Ultime Avec Tous Les Bonus !
                  </a>
              </div>
          </div>
@@ -1378,9 +1339,9 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
      <section class="promotion-section">
          <div class="container">
               <i class="fas fa-tag icon-section" data-aos="fade-up"></i>
-             <h2 data-aos="fade-up" data-aos-delay="100">Un Petit Investissement, Une Énorme Protection.</h2>
-             <p data-aos="fade-up" data-aos-delay="200">Rendre l'information fiable accessible, c'est notre priorité. Le prix promotionnel est un choix pour vous permettre de sécuriser votre projet sans compromettre vos économies, et surtout, pour vous éviter le coût désastreux de la désinformation.</p>
-             <p data-aos="fade-up" data-aos-delay="250">Considérez le coût d'une seule petite erreur ou celui des arnaques... L'investissement dans ce guide est dérisoire en comparaison. C'est le meilleur bouclier que vous puissiez avoir.</p>
+             <h2 data-aos="fade-up" data-aos-delay="100">Un Petit Investissement, Une Énorme Protection ET Maîtrise de Votre Projet.</h2>
+             <p data-aos="fade-up" data-aos-delay="200">Rendre l'information fiable, complète et actionnable accessible, c'est notre priorité. Le prix promotionnel est un choix pour vous permettre de sécuriser votre projet <strong>SANS</strong> compromettre vos économies, et surtout, pour vous éviter le coût désastreux de la désinformation ou d'une mauvaise préparation.</p>
+             <p data-aos="fade-up" data-aos-delay="250">Considérez le coût d'une seule petite erreur, celui des arnaques, ou simplement le stress et le temps perdu à chercher des informations complètes et fiables... L'investissement dans le Guide Ultime est dérisoire en comparaison de la maîtrise et de la sécurité qu'il vous apporte.</p>
          </div>
      </section>
 
@@ -1390,19 +1351,21 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
 
              <div class="pricing-content-wrapper">
                  <div class="pricing-info-block" data-aos="fade-up" data-aos-delay="100">
-                     <h3 class="pricing-info-title">Votre Accès Immédiat Comprend :</h3>
+                    <h3 class="pricing-info-title">Votre Accès Immédiat Comprend :</h3>
                      <ul class="get-list-summary">
-                          <li data-aos="fade-up" data-aos-delay="200"><i class="fas fa-check-circle"></i> Le Guide Complet "Immigration Canada Étape par Étape" (PDF).</li>
-                         <li data-aos="fade-up" data-aos-delay="250"><i class="fas fa-check-circle"></i> Accès GRATUIT à Vie aux Futures Mises à Jour.</li>
-                         <li data-aos="fade-up" data-aos-delay="300"><i class="fas fa-check-circle"></i> Votre Place dans le Groupe Privé Exclusif.</li>
-                         <li data-aos="fade-up" data-aos-delay="400"><i class="fas fa-check-circle"></i> Modèles Optimisés de CV et Lettre de Motivation.</li>
-                      </ul>
+                          <li><i class="fas fa-check-circle"></i> Le Guide <strong>Ultime</strong> Pour Immigrer Au Canada | Édition 2025 (PDF).</li>
+                          <li><i class="fas fa-check-circle"></i> <strong>BONUS :</strong> Le Guide "Immigration Canada Étape par Étape" (PDF, version complémentaire).</li>
+                          <li><i class="fas fa-check-circle"></i> Accès GRATUIT à Vie aux Futures Mises à Jour du Guide Ultime.</li>
+                          <li><i class="fas fa-check-circle"></i> Votre Place dans le Groupe Privé Exclusif.</li>
+                          <li><i class="fas fa-check-circle"></i> Modèles Optimisés de CV et Lettre de Motivation.</li>
+                         <li><i class="fas fa-check-circle"></i> La Tranquillité d'Esprit Ultime.</li>
+                     </ul>
 
-                     <img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/6806771249a97_1001951502.png" alt="Mockup Guide PDF" class="pricing-mockup-img" data-aos="fade-up" data-aos-delay="500">
+                     <img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/6806771249a97_1001951502.png" alt="Mockup Guide Ultime PDF et sur téléphone" class="pricing-mockup-img" data-aos="fade-up" data-aos-delay="500">
 
                       <div class="device-compatibility" data-aos="fade-up" data-aos-delay="600">
-                         <p>Consultez votre guide quand vous voulez, où vous voulez :</p>
-                         <div class="device-icons">
+                         <p>Accédez à vos guides quand vous voulez, où vous voulez :</p>
+                          <div class="device-icons">
                              <i class="fas fa-desktop"></i> <i class="fas fa-tablet-alt"></i> <i class="fas fa-mobile-alt"></i>
                          </div>
                       </div>
@@ -1413,11 +1376,11 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
                      <div class="price-box">
                          <p class="price-label">Accès Immédiat pour le Prix Promotionnel Unique :</p>
                          <p class="original-price">Au lieu de <span class="strike-through">14500 F CFA</span></p>
-                         <p class="promo-price">Seulement <span>4900 F CFA</span></p>
+                         <p class="promo-price" style="color: #ffc107;">Seulement <span>4900 F CFA</span></p>
                          <p class="saving">Économisez 9600 F CFA !</p>
 
                          <a href="https://uowkorva.mychariow.com/prd_xni6no/checkout" class="cta-button main-cta">
-                             Je Télécharge Mon Guide et Sécurise Mon Projet !
+                             Je Télécharge Mon Pack Ultime et Sécurise Mon Projet !
                          </a>
                          <p class="payment-security"><i class="fas fa-lock"></i> Paiement 100% sécurisé. Accès instantané après confirmation.</p>
 
@@ -1429,7 +1392,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
                              <p class="mobile-payments-note">Options de paiement populaires en Afrique de l'Ouest et Centrale.</p>
                          </div>
                      </div>
-                     <p class="footer-note" data-aos="fade-up" data-aos-delay="600">Cette offre est temporaire. Ne laissez pas passer votre chance d'avoir l'information fiable.</p>
+                     <p class="footer-note" data-aos="fade-up" data-aos-delay="600" style="color: #adb5bd;">Cette offre est temporaire. Ne laissez pas passer votre chance d'avoir l'information <strong>ULTIME</strong> et fiable.</p>
                  </div>
              </div>
          </div>
@@ -1439,7 +1402,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
           <div class="container" data-aos="fade-up">
               <i class="fas fa-medal icon-section"></i>
               <h2>Votre Satisfaction Est Notre Priorité : Garantie Totale.</h2>
-              <p class="guarantee-text">Investir dans le guide est sans risque. Nous sommes tellement certains qu'il sera une ressource essentielle pour vous que nous vous offrons une garantie simple et claire.</p>
+              <p class="guarantee-text">Investir dans le Guide Ultime est sans risque. Nous sommes tellement certains qu'il sera une ressource essentielle pour vous que nous vous offrons une garantie simple et claire.</p>
               <p class="guarantee-text">Si, après avoir exploré le guide pendant 30 jours, vous ne trouvez pas la clarté et les informations promises pour avancer dans votre projet, contactez notre support. Nous vous rembourserons intégralement, sans poser de questions.</p>
               <p class="guarantee-text">Votre seul risque est de passer à côté de cette information précieuse.</p>
           </div>
@@ -1449,7 +1412,8 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
         <div class="container" data-aos="fade-up">
             <h2>Besoin d'une Précision ? Contactez-Nous !</h2>
             <p>Une question rapide sur le guide avant de vous lancer ? Notre équipe est disponible sur WhatsApp pour répondre à vos interrogations (information générale uniquement, pas de conseil personnalisé d'immigration).</p>
-            <a href="https://wa.me/15794001062?text=Bonjour%2C%20je%20viens%20de%20votre %20page%20sur%20le%20Guide %20Immigration%20Canada%20et%20j %27ai%20une%20question." class="whatsapp-button" target="_blank" data-aos="zoom-in" data-aos-delay="200">
+            <a href="https://wa.me/15794001062?text=Bonjour%2C%20je%20viens%20de%20votre%20page%20sur%20le%20Guide%20Immigration%20Canada%20et%20j%27ai%20une%20question."
+               class="whatsapp-button" target="_blank" data-aos="zoom-in" data-aos-delay="200">
                 <i class="fab fa-whatsapp"></i> Envoyer un message WhatsApp
             </a>
         </div>
@@ -1474,10 +1438,12 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
             duration: 800,
             once: true
         });
-
+    </script>
+     <script>
         // Script pour mettre à jour l'année dans le footer automatiquement
         document.getElementById('current-year').textContent = new Date().getFullYear();
-
+    </script>
+    <script>
         // Script simple pour le smooth scrolling des liens ancres (vers #pricing)
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1487,19 +1453,6 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
                 });
             });
         });
-
-         // Script pour suivre les clics sur les boutons CTA (pour GA4) - Assurez-vous d'avoir la balise GA4 installée avant ce script
-        if (typeof gtag === 'function') { // Vérifie si gtag est défini (GA4 installé)
-             document.querySelectorAll('a.cta-button, a.whatsapp-button').forEach(button => {
-                 button.addEventListener('click', function() {
-                     gtag('event', 'clic_cta', { // Nom de l'événement : 'clic_cta'
-                         'event_category': 'Engagement',
-                         'event_label': this.textContent.trim(), // Texte du bouton cliqué
-                         'value': this.href // Destination du lien
-                     });
-                 });
-             });
-         }
     </script>
     <script>
 // Assurez-vous que la librairie gtag.js est déjà chargée dans le <head> de votre page
@@ -1523,15 +1476,15 @@ window.addEventListener('scroll', () => {
     }
     if (scrollPercentage > 60 && !window._scroll60) {
         gtag('event', 'scroll_depth', { 'event_category': 'Engagement', 'event_label': '60%' });
-        window._scroll60 = true;
+ window._scroll60 = true;
     }
     if (scrollPercentage > 80 && !window._scroll80) {
         gtag('event', 'scroll_depth', { 'event_category': 'Engagement', 'event_label': '80%' });
-        window._scroll80 = true;
+ window._scroll80 = true;
     }
     if (scrollPercentage >= 100 && !window._scroll100) { // Utilisez >= 100 pour les très longues pages
         gtag('event', 'scroll_depth', { 'event_category': 'Engagement', 'event_label': '100%' });
-        window._scroll100 = true;
+ window._scroll100 = true;
     }
 });
 
@@ -1546,11 +1499,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     };
 
     // Liste des IDs des sections que vous voulez suivre.
-    // Remplacez ces IDs par les IDs réels de vos sections (ex: id="problem-section", id="pricing")
+    // Assurez-vous que chaque section importante a un ID unique.
     const sectionsToTrack = [
         'problem-section',
         'solution-section',
-        'content-section', // Ou l'ID de votre nouvelle section contenu/cartes
+        'content-section', // La section des modules maintenant
         'mamadou-story-section',
         'testimonials-section',
         'about-author-section',
@@ -1562,7 +1515,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         'whatsapp-contact-section' // L'ID de la section WhatsApp
         // Ajoutez ou retirez des IDs de section ici
     ];
-
     sectionsToTrack.forEach(sectionId => {
         const section = document.getElementById(sectionId);
         if (section) {
