@@ -1082,7 +1082,108 @@ src="https://www.facebook.com/tr?id=572408978658915&ev=PageView&noscript=1"
     .email-contact-section p {
         font-size: 0.95em; /* Ajuster la taille du texte sur mobile */
     }
+    /* Styles pour l'image de transition entre sections */
+.image-section-transition {
+    text-align: center; /* Centre l'image si elle est plus petite que le conteneur */
+    margin: 60px 0; /* Ajoute de l'espace au-dessus et en-dessous de l'image */
+    padding: 0 20px; /* Ajoute un peu de padding horizontal sur petits écrans */
+    width: 100%; /* S'assure que le conteneur de l'image prend toute la largeur disponible */
+    box-sizing: border-box; /* Inclure padding et bordure dans la largeur totale */
 }
+
+.image-section-transition img {
+    display: block; /* Évite les espaces blancs sous l'image */
+    margin: 0 auto; /* Centre l'image si sa largeur est inférieure à max-width */
+    
+    /* Règles pour la rendre responsive et l'empêcher de déborder */
+    width: 100%; /* Force l'image à prendre 100% de la largeur de son conteneur */
+    max-width: 100%; /* S'assure qu'elle ne dépasse pas la largeur de son conteneur */
+    height: auto; /* Maintient les proportions */
+    
+    /* Styles optionnels que nous avions ajoutés */
+    border-radius: 8px; /* Optionnel: ajoute des coins arrondis */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Optionnel: ajoute une légère ombre */
+    box-sizing: border-box; /* Inclure padding et bordure dans la largeur totale de l'image */
+}
+
+/* Media query pour ajuster les marges sur les petits écrans si nécessaire */
+@media (max-width: 768px) {
+    .image-section-transition {
+        margin: 40px 0; /* Marges réduites sur mobile */
+    }
+}
+/* Styles pour le conteneur d'image ENTRE les sections (avant Solution) */
+.image-section-transition {
+    /* Centre le bloc d'image et ajoute les marges verticales */
+    margin: 60px auto; 
+    /* Ajoute le padding sur les côtés pour aligner avec le contenu du .container */
+    padding: 0 20px; 
+    /* S'assure que le conteneur de l'image prend toute la largeur disponible (jusqu'à max-width) */
+    width: 100%; 
+    /* Limite la largeur du conteneur d'image pour qu'il ne dépasse pas la largeur effective du .container principal */
+    /* max-width ici peut être 100% car son parent direct est déjà limité par .container */
+    max-width: 100%; 
+    /* Inclure padding et bordure dans la largeur totale du conteneur */
+    box-sizing: border-box; 
+    /* Ajout d'un overflow hidden au conteneur pour s'assurer que rien ne dépasse, même si l'image a un souci */
+    overflow: hidden;
+    /* text-align: center; /* Peut être ajouté si nécessaire, mais margin auto sur l'image fait souvent le travail */ */
+}
+
+/* Styles pour l'image ITSELF à l'intérieur de son conteneur */
+.image-section-transition img {
+    /* S'assure que l'image se comporte comme un bloc pour margin: auto */
+    display: block; 
+    /* Centre l'image horizontalement si elle est plus petite que son conteneur */
+    margin: 0 auto; 
+    
+    /* Règles pour rendre l'image responsive et l'empêcher absolument de déborder */
+    /* On garde !important car quelque chose d'autre semble prendre le dessus */
+    width: 100% !important; /* Force l'image à prendre 100% de la largeur de son parent (.image-section-transition) */
+    max-width: 100% !important; /* S'assure qu'elle ne dépasse jamais 100% de la largeur de son parent */
+    height: auto !important; /* Maintient les proportions automatiquement */
+    
+    /* Styles optionnels que vous aviez demandés */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Inclure padding/border dans la taille de l'image */
+}
+
+/* Media query pour ajuster les marges et padding sur les tablettes (votre breakpoint 900px) */
+@media (max-width: 900px) {
+    .image-section-transition {
+        /* Adapter le padding horizontal pour qu'il corresponde à celui du .container à ce breakpoint */
+        padding: 0 15px !important; 
+        /* S'assurer qu'il prend toute la largeur disponible */
+        width: 100% !important;
+        max-width: 100% !important; /* S'assurer qu'il s'adapte */
+        margin: 50px auto !important; /* Ajuster la marge verticale si vous le souhaitez, basé sur vos autres sections */
+    }
+    /* Les règles de l'image devraient s'adapter au nouveau conteneur */
+}
+
+
+/* Media query pour ajuster sur les téléphones (votre breakpoint 768px) */
+@media (max-width: 768px) {
+    .image-section-transition {
+        /* Adapter le padding horizontal pour qu'il corresponde à celui du .container à ce breakpoint */
+        padding: 0 15px !important; 
+         /* S'assurer qu'il prend toute la largeur disponible */
+        width: 100% !important;
+        max-width: 100% !important; /* S'assurer qu'il s'adapte */
+        margin: 40px auto !important; /* Ajuster la marge verticale si vous le souhaitez */
+    }
+     /* Les règles de l'image devraient s'adapter au nouveau conteneur */
+}
+
+/* Ajustement très fin pour les petits téléphones si nécessaire (votre breakpoint 480px) */
+@media (max-width: 480px) {
+    .image-section-transition {
+         padding: 0 10px !important; /* Peut-être réduire encore le padding sur les très petits écrans */
+         margin: 30px auto !important; /* Ajuster la marge verticale si vous le souhaitez */
+    }
+}
+
 
 
     </style>
@@ -1126,7 +1227,7 @@ data-aos-delay="500">C'est le moment d'investir dans la
             </div>
         </div>
     </header>
-
+    <div class="image-section-transition"><img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/681d3a1bd33d5_1002012666.webp" alt="..."></div>
     <section class="problem-section" id="problem-section"> <div class="container">
             <i class="fas fa-exclamation-triangle icon-section" data-aos="fade-up"></i>
             <h2 data-aos="fade-up" data-aos-delay="100">Le Vrai Danger ? Désinformation, Infos Éparpillées & Arnaques Coûteuses.</h2>
@@ -1134,8 +1235,11 @@ data-aos-delay="500">C'est le moment d'investir dans la
       <p data-aos="fade-up"data-aos-delay="250">Chaque Franc CFA durement gagné compte. Chaque jour passé à suivre une mauvaise piste est un jour perdu pour votre avenir. Ne laissez pas la confusion ou la peur paralyser votre projet ou, pire, vous faire perdre vos économies dans une arnaque dévastatrice. Vous devez vous <strong>PROTÉGER</strong> activement. La seule protection efficace est une information <strong>fiable, vérifiée, centralisée... et OFFICIELLE</strong>.</p>
         </div>
     </section>
+     <div class="hero-image" data-aos="fade-left">
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/681d2a6c28477_1002012451.webp" alt="Mockup du Guide Ultime Immigration Canada 2025" class="guide-mockup">
+            </div>
 
-    <section class="solution-section" id="solution-section"> <div class="container">
+<section class="solution-section" id="solution-section"> <div class="container">
             <i class="fas fa-lightbulb icon-section" data-aos="fade-up"></i>
             <h2 data-aos="fade-up" data-aos-delay="100">Votre Solution : Le Guide Ultime Basé à <strong>100% sur les Sources Officielles</strong>.</h2>
        <p class="section-intro"
@@ -1200,12 +1304,12 @@ data-aos-delay="200">Face au chaos de la désinformation, il vous faut un <stron
   <strong>Module 4 : Valoriser vos diplômes et compétences acquis en Afrique au Canada</strong>
   <span> - Toutes les étapes pour faire évaluer vos diplômes étrangers (tout sur WES et autres organismes reconnus), comprendre la reconnaissance professionnelle, et mettre en avant votre précieuse expérience acquise dans votre pays.</span>
 </li>
-
+<div class="image-section-transition"><img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/681d30e02f039_1002012434.webp" alt="..."></div>
 <li>
   <strong>Module 5 : Décrocher un emploi au Canada : CV, lettre et stratégies gagnantes</strong>
   <span> - Maîtrisez l'art d'adapter votre CV et votre lettre aux exigences strictes des recruteurs canadiens (<strong>modèles professionnels prêts à l'emploi INCLUS !</strong>), et découvrez les stratégies de recherche d'emploi les plus efficaces que vous soyez encore à l'étranger ou déjà sur place.</span>
 </li>
-
+<div class="image-section-transition"><img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/681d30e9e3df7_1002012447.webp" alt="..."></div>
 <li>
   <strong>Module 6 : Gérer vos finances et prouver vos fonds (explications adaptées à la réalité africaine)</strong>
   <span> - Calculez précisément tous les frais à prévoir, comprenez en détail la notion de <strong>preuve de fonds requise par le Canada (avec des éclaircissements sur les subtilités liées aux systèmes bancaires africains)</strong>, établissez un budget réaliste pour vos premiers mois, et explorez les options de transfert d'argent fiables.</span>
@@ -1230,6 +1334,7 @@ data-aos-delay="200">Face au chaos de la désinformation, il vous faut un <stron
   <strong>Module 10 : Vous adapter et réussir votre vie quotidienne au Canada</strong>
   <span> - Comprendre la culture canadienne, gérer le choc culturel initial, s'orienter avec les transports, utiliser les services bancaires, construire une vie sociale et des loisirs... bref, tous les secrets d'une intégration réussie pour vous sentir rapidement "chez vous".</span>
 </li>
+<div class="image-section-transition"><img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/681d30d2841fb_1002012435.webp" alt="..."></div>
             </ul>
             <div class="text-center" data-aos="fade-up" data-aos-delay="300" style="margin-top: 50px;">
                 <a href="#pricing" class="cta-button main-cta">
@@ -1238,6 +1343,7 @@ data-aos-delay="200">Face au chaos de la désinformation, il vous faut un <stron
             </div>
         </div>
     </section>
+    <div class="image-section-transition"><img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/681d30c35364e_1002012448.webp" alt="..."></div>
 
     <section class="mamadou-story-section" id="mamadou-story-section"> <div class="container">
             <i class="fas fa-user-times icon-section" data-aos="fade-up"></i>
@@ -1302,7 +1408,7 @@ data-aos-delay="200">Face au chaos de la désinformation, il vous faut un <stron
     <p data-aos="fade-up" data-aos-delay="150">Ma plus grande motivation est de vous éviter les pièges que j'ai pu entrevoir, et de vous donner le pouvoir de prendre en main votre projet. Ma mission est simple : vous fournir les outils les plus fiables pour réussir en <strong>toute autonomie, sécurité et confiance</strong>, en restant à l'abri des fausses promesses qui détruisent tant de rêves.</p>
         </div>
     </section>
-
+    <div class="image-section-transition"><img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/681d3a3d95ac4_1002012661.webp" alt="..."></div>
     <section class="faq-section" id="faq-section"> <div class="container">
             <i class="fas fa-question-circle icon-section" data-aos="fade-up"></i>
             <h2 data-aos="fade-up" data-aos-delay="100">Vos Questions, Nos Réponses Claires :</h2>
@@ -1344,7 +1450,7 @@ data-aos-delay="200">Face au chaos de la désinformation, il vous faut un <stron
             </div>
         </div>
     </section>
-
+    <div class="image-section-transition"><img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/681d3a30dae15_1002012665.webp" alt="..."></div>
     <section class="what-you-get-section" id="what-you-get-section"> <div class="container">
              <i class="fas fa-box-open icon-section" data-aos="fade-up"></i>
              <h2 data-aos="fade-up" data-aos-delay="100">Votre Pack Ultime Complet pour Réussir :</h2>
