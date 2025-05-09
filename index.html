@@ -27,6 +27,26 @@ src="https://www.facebook.com/tr?id=572408978658915&ev=PageView&noscript=1"
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <style>
+    	/* CSS pour réinitialiser les marges par défaut et gérer le débordement horizontal */
+html, body {
+    margin: 0;       /* Supprime les marges par défaut du navigateur */
+    padding: 0;      /* Supprime le padding par défaut du navigateur */
+    width: 100%;     /* Assure que l'html et le body prennent 100% de la largeur de la fenêtre */
+    overflow-x: hidden; /* Cache tout ce qui dépasse horizontalement */
+}
+
+body {
+    /* Appliquez d'autres styles de base du body ici si vous en avez, comme la police, la couleur de fond, etc. */
+    /* Exemple: font-family: 'Votre Police', sans-serif; */
+    /* Exemple: background-color: #f4f4f4; */
+}
+
+/* Optionnel : Appliquer box-sizing globalement peut aider à prévenir les débordements dus aux padding/bordures */
+/* C'est une bonne pratique mais peut nécessiter des ajustements sur des sites existants */
+/* *, *::before, *::after {
+    box-sizing: border-box;
+} */
+
         /* Styles globaux et resets */
         * {
             box-sizing: border-box;
