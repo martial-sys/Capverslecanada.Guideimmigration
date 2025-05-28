@@ -28,7 +28,80 @@ src="https://www.facebook.com/tr?id=572408978658915&ev=PageView&noscript=1"
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     
     <style>
-    	
+    	/* --- Règles CSS SPÉCIFIQUES pour vos images larges (environ 3:2) sur PC --- */
+
+/* Conteneur (.image-section-transition) : Gère la largeur et le ratio sur PC */
+.image-section-transition {
+    display: block; /* S'assure que le conteneur est un bloc pour bien gérer la largeur */
+    width: 100%; /* Prend toute la largeur disponible */
+    max-width: 1400px; /* Limite la largeur maximale sur très grands écrans (ajustez si besoin) */
+    margin: 60px auto; /* Centre le conteneur horizontalement, marges verticales */
+    padding: 0 20px; /* Padding intérieur pour les bords */
+    box-sizing: border-box; /* IMPORTANT : Inclut padding et bordure dans la largeur/hauteur */
+    text-align: center; /* Centrage pour le contenu */
+
+    /* --- LA MAGIE du ratio pour le CONTENEUR (sur PC) --- */
+    position: relative; /* Indispensable pour positionner l'image enfant en absolu */
+    height: 0; /* Annule la hauteur naturelle pour que padding-bottom la définisse */
+    padding-bottom: calc(100% * (2 / 3)); /* <<< NOUVEAU RATIO : 3:2 (66.67% de la largeur du conteneur pour sa hauteur) */
+    overflow: hidden; /* FILET DE SÉCURITÉ : Cache tout ce qui dépasse du conteneur (très important ici) */
+}
+
+/* Image (<img>) à l'intérieur du conteneur : S'adapte au conteneur */
+.image-section-transition img {
+    position: absolute; /* Positionne l'image par rapport à son parent .image-section-transition */
+    top: 0;
+    left: 0;
+    width: 100%; /* L'image prend 100% de la largeur de son conteneur (qui a le bon ratio) */
+    height: 100%; /* L'image prend 100% de la hauteur de son conteneur (qui a le bon ratio) */
+    
+    /* --- COMMENT L'IMAGE REMPLIT L'ESPACE : Très important pour éviter les "cadres" --- */
+    object-fit: cover; /* L'image couvre l'espace sans laisser de vide. Si l'image n'est pas EXACTEMENT 3:2, un léger recadrage. */
+
+    /* Styles visuels supplémentaires (issus de votre code original) */
+    border-radius: 8px; /* Bords arrondis */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Ombre */
+    box-sizing: border-box; /* Cohérence du box-sizing */
+    display: block; /* Assure un comportement de bloc */
+    margin: 0 auto; /* Centrage (redondant avec position:absolute, mais ne nuit pas) */
+}
+
+
+/* --- Media Queries : AJUSTEMENTS pour les TÉLÉPHONES et TABLETTES (768px et moins) --- */
+/* Ces règles SONT ACTIVÉES UNIQUEMENT sur mobile/tablette.
+   Elles annulent les propriétés spécifiques au ratio fixe pour que toutes les images
+   (y compris les carrées ou autres) s'affichent correctement en hauteur automatique. */
+
+@media (max-width: 768px) {
+    /* Pour le conteneur (.image-section-transition) sur mobile */
+    .image-section-transition {
+        margin: 40px 0; /* Ajustement des marges */
+        padding: 0 10px; /* Réduction du padding */
+        
+        /* TRÈS IMPORTANT : Annule les règles de ratio spécifique pour mobile */
+        position: static !important; /* Revert à la position normale */
+        height: auto !important; /* Laisse la hauteur être définie par l'image à l'intérieur */
+        padding-bottom: 0 !important; /* Annule le padding-bottom pour le ratio */
+        overflow: visible !important; /* Permet le débordement si nécessaire (mais ne devrait pas) */
+    }
+
+    /* Pour l'image (<img>) à l'intérieur du conteneur sur mobile */
+    .image-section-transition img {
+        position: static !important; /* L'image revient à sa position normale */
+        height: auto !important; /* Laisse l'image définir sa hauteur automatiquement */
+        object-fit: contain !important; /* 'contain' pour éviter tout recadrage sur mobile.
+                                           Si vous préférez 'cover' et un léger recadrage pour le mobile, changez en 'cover'. */
+        /* Les autres styles comme width:100%, border-radius, box-shadow restent valides */
+    }
+}
+
+@media (max-width: 480px) { /* Pour les très petits écrans de mobile */
+    .image-section-transition {
+        margin: 30px 0;
+        padding: 0 5px;
+    }
+}
+	    
     	/* CSS pour réinitialiser les marges par défaut et gérer le débordement horizontal */
 html, body {
     margin: 0;       /* Supprime les marges par défaut du navigateur */
